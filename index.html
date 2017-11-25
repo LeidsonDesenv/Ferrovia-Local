@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ferrovia Local - Mapa de Transporte</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="content">
+<ul class="menu">
+	<li class="menu-item"><a href="index.html"> Home </a></li>
+	<li class="menu-item"> <a href="#">Quem Somos</a></li>
+	<li class="menu-item"> <a href="#">Trabalhe Conosco</a></li>
+	<li class="menu-item"> <a href="#">Contato</a></li>
+</ul>
+<img src="img/ferrovia.png" alt="Foto Mapa de Linhas" style="max-width: 90%">
+<fieldset>
+	<legend>Para onde quer ir ?</legend>
+	Onde está ?
+	<select id="sourceList" >
+		<option> </option>
+		<option value="A">A</option>
+		<option value="B">B</option>
+		<option value="C">C</option>
+		<option value="D">D</option>
+		<option value="E">E</option>
+	</select> <br/>
+	Para aonde quer ir ?
+	<select id="destiny">	
+		<option> </option>
+		<option value="A">A</option>
+		<option value="B">B</option>
+		<option value="C">C</option>
+		<option value="D">D</option>
+		<option value="E">E</option>
+	</select> <br/>
+	<p id="resposta"></p>
+	<button onclick="getRoute('sourceList', 'destiny','resposta');">Ver Caminho</button> 
+</fieldset>
+
+</div>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>
